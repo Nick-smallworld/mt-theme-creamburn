@@ -9,8 +9,7 @@ Movable Type 5 用のテーマ「CreamBurn」です。Creative Commons ライセ
 CreamBurn
 
 ## 対応CMS ##
-Movable Type 5.x　以上　
-(ブログ用テーマ)
+Movable Type 5.x 以上 (ブログ用テーマ)
 
 ## 対応ブラウザ ##
 Goole Chrome(最新版)
