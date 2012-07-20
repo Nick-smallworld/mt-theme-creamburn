@@ -3,6 +3,7 @@ id: mt-theme-creamburn
 name: CreamBurn
 author_name: Nick
 author_link: http://www.linkedin.com/pub/takeshi-osanai/10/3a/3a5
+doc_link: https://github.com/Nick-smallworld/mt-theme-creamburn
 version: '1.0'
 class: blog
 description: '<__trans phrase="CreamBurn is a theme for SMBs website and personal blog.">'

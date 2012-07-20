@@ -30,10 +30,10 @@ Released for free under a Creative Commons Attribution 3.0 License
 
         <div class="article">
             <h1><mt:EntryTitle /></h1><div class="clr"></div>
-            <p>Posted by <mt:If tag="AuthorURL"><a href="<mt:AuthorURL>"></a></mt:If><mt:EntryAuthorDisplayName /><mt:If tag="AuthorURL"></a></mt:If> &nbsp;|&nbsp; Category <mt:EntryCategories glue=","><a href="<mt:CategoryArchiveLink>"><mt:CategoryLabel /></a></mt:EntryCategories></p>
+            <p>Posted by <mt:If tag="AuthorURL"><a href="<mt:AuthorURL>"></a></mt:If><mt:EntryAuthorDisplayName /><mt:If tag="AuthorURL"></a></mt:If> &nbsp;|&nbsp; <__trans phrase="category"> <mt:EntryCategories glue=","><a href="<mt:CategoryArchiveLink>"><mt:CategoryLabel /></a></mt:EntryCategories></p>
             <mt:EntryBody>
             <mt:EntryMore>
-            <p>Tagged: <mt:EntryTags glue=", "><a href="<mt:TagSearchLink>"><mt:TagName></a></mt:EntryTags></p>
+            <p><__trans phrase="Tags">: <mt:EntryTags glue=", "><a href="<mt:TagSearchLink>"><mt:TagName></a></mt:EntryTags></p>
             <p><MTEntryDate format="%B %e, %Y %I:%M %p"></p>
         </div>
 
