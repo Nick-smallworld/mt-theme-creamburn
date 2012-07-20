@@ -30,7 +30,7 @@ Defining mt:var and enter pagetitle to judge whether current page is active or n
     <div class="clr"></div>
     <div class="menu_nav">
         <ul>
-            <li<mt:If name="main_index"> class="active"</mt:If>><a href="<mt:BlogURL>">Home</a></li>
+            <li<mt:If name="main_index"> class="active"</mt:If>><a href="<mt:BlogURL>">TOP</a></li>
             <mt:Pages tag="@SITE_NAV_PAGE">
             <mt:SetVarBlock name="PageID"><mt:pageid></mt:SetVarBlock>
             <li<mt:If name="PID" eq="$pageid"> class="active"</mt:If>><a href="<mt:PagePermaLink>"><mt:PageTitle></a></li>
