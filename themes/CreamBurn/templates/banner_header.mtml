@@ -11,12 +11,12 @@ Defining mt:var and enter pagetitle to judge whether current page is active or n
         <div class="searchform">
             <form id="formsearch" name="formsearch" method="post" action="<mt:CGIPath><mt:SearchScript>">
                 <span><input name="search" class="editbox_search" id="search" maxlength="80" value="<$mt:SearchString$>" type="text"></span>
-                <mt:If name="search_results">
-                    <input type="hidden" name="IncludeBlogs" value="<$mt:SearchIncludeBlogs$>">
-                <mt:Else>
-                    <input type="hidden" name="IncludeBlogs" value="<$mt:BlogID$>">
-                </mt:If>
-                <input type="hidden" name="limit" value="10">
+              <mt:If name="search_results">
+                <input type="hidden" name="IncludeBlogs" value="<$mt:SearchIncludeBlogs$>">
+              <mt:Else>
+                <input type="hidden" name="IncludeBlogs" value="<$mt:BlogID$>">
+              </mt:If>
+                <input type="hidden" name="limit" value="<mt:SearchMaxResults>">
                 <input name="button_search" src="<$MTStaticWebPath$>support/theme_static/CreamBurn/images/search_btn.gif" class="button_search" type="image" alt="search">
             </form>
         </div>
@@ -30,14 +30,12 @@ Defining mt:var and enter pagetitle to judge whether current page is active or n
     <div class="clr"></div>
     <div class="menu_nav">
         <ul>
-            <li<mt:If name="main_index"> class="active"</mt:If>><a href="<mt:BlogURL>">TOP</a></li>
+            <li<mt:If name="main_index"> class="active"</mt:If>><a href="<mt:BlogURL>"><__trans phrase="Home"></a></li>
             <mt:Pages tag="@SITE_NAV_PAGE">
             <mt:SetVarBlock name="PageID"><mt:pageid></mt:SetVarBlock>
             <li<mt:If name="PID" eq="$pageid"> class="active"</mt:If>><a href="<mt:PagePermaLink>"><mt:PageTitle></a></li>
             </mt:Pages>
-            <li<mt:If name="archive_index"> class="active"
-                <mt:ElseIf name="archive_listing"> class="active"
-                <mt:ElseIf name="entry_archive"> class="active"</mt:If>>
+            <li<mt:If name="archive_index"> class="active"<mt:ElseIf name="archive_listing"> class="active"<mt:ElseIf name="entry_archive"> class="active"</mt:If>>
             <a href="<mt:Link template="<__trans phrase="Archive Index">">"><__trans phrase="blog"></a></li>
         </ul>
     </div>
