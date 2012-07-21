@@ -28,7 +28,7 @@ Defining mt:var and enter pagetitle to judge whether current page is active or n
         <p>Pellentesque adipiscing blandit mollis. Curabitur varius est et sem rhoncus et pretium massa molestie. Vestibulum mattis justo ultricies mauris fringilla rutrum. &nbsp; </p>
     </div>
     <div class="clr"></div>
-    <div class="menu_nav">
+    <nav class="menu_nav">
         <ul>
             <li<mt:If name="main_index"> class="active"</mt:If>><a href="<mt:BlogURL>"><__trans phrase="Home"></a></li>
             <mt:Pages tag="@SITE_NAV_PAGE">
@@ -38,7 +38,7 @@ Defining mt:var and enter pagetitle to judge whether current page is active or n
             <li<mt:If name="archive_index"> class="active"<mt:ElseIf name="archive_listing"> class="active"<mt:ElseIf name="entry_archive"> class="active"</mt:If>>
             <a href="<mt:Link template="<__trans phrase="Archive Index">">"><__trans phrase="blog"></a></li>
         </ul>
-    </div>
+    </nav>
     <div class="clr"></div>
     </div>
     </div>

@@ -41,7 +41,9 @@ After downloading, unzip and deploy all files to /path/to/mt/themes/ directory. 
 
 Theme’s static files (i.e. images and js files) will be automatically relocated under
 
-/mt-static/support/theme_static/CreamBurn/ directory.  Please pay attention if you want to adjust a design. Please visit the theme’s documentation page for more detail information.
+/mt-static/support/theme_static/CreamBurn/ directory.  
+
+Please pay attention if you want to adjust a design.  Visit the theme’s documentation page for more detail information.
 
 http://www.movabletype.org/documentation/themes/index.html
 
