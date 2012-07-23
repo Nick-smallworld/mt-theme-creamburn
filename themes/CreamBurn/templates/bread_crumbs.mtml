@@ -1,0 +1,35 @@
+<mt:If name="page_template" eq="1">
+    <div class="breadcrumb">
+        <a href="<mt:BlogURL>"><__trans phrase="Home"></a> ≫
+        <mt:ParentFolders exclude_current="0">
+        <a href="<mt:BlogURL><mt:FolderPath>/"><mt:FolderLabel></a> ≫
+        </mt:ParentFolders>
+        <mt:PageTitle>
+    </div>
+<mt:ElseIf name="entry_archive" eq="1">
+    <div class="breadcrumb">
+        <a href="<mt:BlogURL>"><__trans phrase="Home"></a> &raquo;
+        <mt:ParentCategories glue=" &raquo; ">
+        <a href="<mt:CategoryArchiveLink>"><mt:CategoryLabel></a>
+        </mt:ParentCategories>
+        <mt:if tag="EntryCategory"> &raquo; </mt:if><mt:EntryTitle>
+    </div>
+<mt:ElseIf name="category_archive" eq="1">
+    <div class="breadcrumb">
+        <mt:CategoryID setvar="cat_id">
+        <a href="<mt:BlogURL>"><__trans phrase="Home"></a> &raquo;
+        <mt:ParentCategories glue=" &raquo; ">
+        <mt:CategoryID setvar="current_cat_id">
+        <mt:if name="current_cat_id" eq="cat_id">
+        <mt:CategoryLabel>
+        <mt:else>
+        <a href="<mt:CategoryArchiveLink>">
+        <mt:CategoryLabel></a>
+        </mt:if>
+        </mt:ParentCategories>
+    </div>
+<mt:ElseIf name="archive_index" eq="1">
+    <div class="breadcrumb">
+        <a href="<mt:BlogURL>"><__trans phrase="Home"></a> &raquo; <__trans phrase="blog">
+    </div>
+</mt:If>
