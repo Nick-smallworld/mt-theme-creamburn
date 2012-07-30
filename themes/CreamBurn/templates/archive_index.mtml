@@ -19,39 +19,35 @@ Released for free under a Creative Commons Attribution 3.0 License
 
     <div class="content">
 
-    <div class="content_resize">
-
         <div class="mainbar">
 
 <mt:Include module="BreadCrumbs">
 
         <mt:Entries lastn="10">
-        <div class="article">
+        <article class="article">
             <h2><a href="<mt:EntryPermaLink>"><mt:EntryTitle></a></h2><div class="clr"></div>
             <p><span class="date"><MTEntryDate format="%B %e, %Y %I:%M %p"></span> &nbsp;|&nbsp; Posted by <mt:If tag="AuthorURL"><a href="<mt:AuthorURL>"></mt:If><mt:EntryAuthorDisplayName><mt:If tag="AuthorURL"></a></mt:If> &nbsp;|&nbsp;  <__trans phrase="category"> <mt:EntryCategories glue=","><a href="<mt:CategoryArchiveLink>"><mt:CategoryLabel></a></mt:EntryCategories> <a href="<mt:EntryPermaLink>" class="com">Comments (<mt:EntryCommentCount>) &raquo;</a></p>
             <mt:EntryExcerpt>
             <mt:If tag="entrymore"><p class="spec"><a href="<mt:EntryPermaLink>" class="rm">Read more</a></p></mt:If>
-        </div>
+        </article>
         </mt:Entries>
 
-        </div>
+        </div><!-- end mainbar -->
 
         <div class="sidebar">
 
         <mt:Include module="<__trans phrase="Sidebar">">
 
-        </div>
+        </div><!-- end sidebar -->
 
         <div class="clr"></div>
 
-    </div>
-
-    </div>
+    </div><!-- end content -->
 
 <mt:Include module="<__trans phrase="Banner Footer">">
 <mt:Include module="<__trans phrase="Footer">">
 
-</div>
+</div><!-- end main -->
 
 </body>
 

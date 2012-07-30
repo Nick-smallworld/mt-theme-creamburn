@@ -19,41 +19,37 @@ Released for free under a Creative Commons Attribution 3.0 License
 
     <div class="content">
 
-    <div class="content_resize">
-
         <div class="mainbar">
 
 <mt:Include module="BreadCrumbs"> 
 
-        <div class="article">
+        <article class="article">
             <h2><mt:PageTitle /></h2><div class="clr"></div>
             <p>Posted by <mt:If tag="AuthorURL"><a href="<mt:AuthorURL>"></a></mt:If><mt:EntryAuthorDisplayName /><mt:If tag="AuthorURL"></a></mt:If></p>
             <mt:PageBody>
             <mt:PageMore>
             <p><MTPageDate format="%B %e, %Y %I:%M %p"></p>
-        </div>
+        </article>
 
         <mt:Ignore>  <!- if you want to allow comment to webpages, pllease remove ignore tags. -->
         <mt:Include module="<__trans phrase="Comments">">
         </mt:Ignore>
-        </div>
+        </div><!-- end mainbar -->
 
         <div class="sidebar">
 
         <mt:Include module="<__trans phrase="Sidebar">">
 
-        </div>
+        </div><!-- end sidebar>
 
         <div class="clr"></div>
 
-     </div>
-
-     </div>
+     </div><!-- end content -->
 
 <mt:Include module="<__trans phrase="Banner Footer">">
 <mt:Include module="<__trans phrase="Footer">">
 
-</div>
+</div><!-- end main -->
 
 </body>
 

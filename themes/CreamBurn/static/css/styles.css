@@ -10,8 +10,7 @@ body {
     width: 100%;
     color: #959595;
     font-weight: normal;
-    font-size: 13px;
-    line-height: 1.1em;
+    font-size: 12px;
     font-family:Arial, Helvetica, sans-serif;
 }
 html,
@@ -39,22 +38,19 @@ h1 {
     color: #3a3b3b;
     font-weight: bold;
     font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     letter-spacing: -2px;
 }
 
 .article h1 {
     font-size: 28px;
-    line-height: 1em;
 }
 
 .article ul {
     margin-left: 40px;
 }
 
-h1 span {
-    color: #ebc42b;
-}
+h1 span { color: #ebc42b }
 h1 a,
 h1 a:hover {
     color: #3a3b3b;
@@ -63,18 +59,16 @@ h1 a:hover {
 h1 small {
     display: block;
     padding-left: 140px;
-    padding-top: 1em;
     font-weight: normal;
     font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     color: #959595;
     letter-spacing: normal;
 }
 h2 {
     font-weight: normal;
     font-size: 24px;
-    line-height: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     padding: 8px 0;
     margin: 8px 0;
     color: #323a3f;
@@ -83,9 +77,8 @@ p {
     margin: 8px 0;
     padding: 0 0 8px 0;
     font-weight: normal;
-    font-size: 1em;
-    line-height: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 p.spec { text-align: left }
 a {
@@ -133,14 +126,14 @@ img {
     color: #fff;
     font-weight: normal;
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif;  */
     text-transform: uppercase;
 }
 .header .htext p {
     color: #fff;
     font-weight: bold;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 .header .htext a {
     color: #fff;
@@ -148,14 +141,12 @@ img {
 }
 /* menu */
 .menu_nav {
-    margin: 0 24px 0 24px;
+    margin: 0;
+    padding: 0 24px;
     height: 65px;
     background: url(<$MTStaticWebPath$>support/theme_static/CreamBurn/images/menu.gif) repeat-x center top;
 }
-.menu_nav ul {
-    list-style: none;
-}
-
+.menu_nav ul { list-style: none }
 .menu_nav ul li {
     margin: 0;
     padding: 10px 2px 0 0;
@@ -165,10 +156,10 @@ img {
 .menu_nav ul li a {
     display: block;
     margin: 0;
-    padding: 24px 24px 16px;
+    padding: 17px 24px 16px;
     color: #959595;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 18px;
 }
 .menu_nav ul li.active a,
 .menu_nav ul li a:hover {
@@ -373,7 +364,7 @@ ol li .send { margin: 16px 0 0 0 }
     background: none;
     font-weight: normal;
     font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif;  */
     color: #a8acb2;
 }
 #formsearch input.button_search {

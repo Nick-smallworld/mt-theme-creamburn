@@ -5,31 +5,31 @@
         <a href="<mt:BlogURL><mt:FolderPath>/"><mt:FolderLabel></a> ≫
         </mt:ParentFolders>
         <mt:PageTitle>
-    </div>
+    </div><!-- end breadcrumb -->
 <mt:ElseIf name="entry_archive" eq="1">
-    <div class="breadcrumb">
-        <a href="<mt:BlogURL>"><__trans phrase="Home"></a> &raquo;
-        <mt:ParentCategories glue=" &raquo; ">
-        <a href="<mt:CategoryArchiveLink>"><mt:CategoryLabel></a>
-        </mt:ParentCategories>
-        <mt:if tag="EntryCategory"> &raquo; </mt:if><mt:EntryTitle>
-    </div>
+        <div class="breadcrumb">
+            <a href="<mt:BlogURL>"><__trans phrase="Home"></a> &raquo;
+            <mt:ParentCategories glue=" &raquo; ">
+            <a href="<mt:CategoryArchiveLink>"><mt:CategoryLabel></a>
+            </mt:ParentCategories>
+            <mt:if tag="EntryCategory"> &raquo; </mt:if><mt:EntryTitle>
+        </div><!-- end breadcrumb -->
 <mt:ElseIf name="category_archive" eq="1">
-    <div class="breadcrumb">
-        <mt:CategoryID setvar="cat_id">
-        <a href="<mt:BlogURL>"><__trans phrase="Home"></a> &raquo;
-        <mt:ParentCategories glue=" &raquo; ">
-        <mt:CategoryID setvar="current_cat_id">
-        <mt:if name="current_cat_id" eq="cat_id">
-        <mt:CategoryLabel>
-        <mt:else>
-        <a href="<mt:CategoryArchiveLink>">
-        <mt:CategoryLabel></a>
-        </mt:if>
-        </mt:ParentCategories>
-    </div>
+        <div class="breadcrumb">
+            <mt:CategoryID setvar="cat_id">
+            <a href="<mt:BlogURL>"><__trans phrase="Home"></a> &raquo;
+            <mt:ParentCategories glue=" &raquo; ">
+            <mt:CategoryID setvar="current_cat_id">
+            <mt:if name="current_cat_id" eq="cat_id">
+            <mt:CategoryLabel>
+            <mt:else>
+            <a href="<mt:CategoryArchiveLink>">
+            <mt:CategoryLabel></a>
+            </mt:if>
+            </mt:ParentCategories>
+        </div><!-- end breadcrumb -->
 <mt:ElseIf name="archive_index" eq="1">
-    <div class="breadcrumb">
-        <a href="<mt:BlogURL>"><__trans phrase="Home"></a> &raquo; <__trans phrase="blog">
-    </div>
+        <div class="breadcrumb">
+            <a href="<mt:BlogURL>"><__trans phrase="Home"></a> &raquo; <__trans phrase="blog">
+        </div><!-- end breadcrumb -->
 </mt:If>

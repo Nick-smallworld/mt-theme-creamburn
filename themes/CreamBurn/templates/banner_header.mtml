@@ -3,8 +3,8 @@ Defining mt:var and enter pagetitle to judge whether current page is active or n
 --></mt:Ignore>
 <mt:If name="page_archive" eq="1"><mt:SetVarBlock name="PID"><mt:PageID></mt:SetVarBlock></mt:If>
 
-    <div class="header">
-    <div class="header_resize">
+    <header class="header">
+
         <div id="pagetop">
         <div class="logo"><h1><a href="<mt:BlogURL>"><span><mt:BlogName></span> <small><mt:BlogDescription></small></a></h1></div>
         <div class="searchform">
@@ -18,14 +18,14 @@ Defining mt:var and enter pagetitle to judge whether current page is active or n
                 <input type="hidden" name="limit" value="<mt:SearchMaxResults>">
                 <input name="button_search" src="<$MTStaticWebPath$>support/theme_static/CreamBurn/images/search_btn.gif" class="button_search" type="image" alt="search">
             </form>
-        </div>
-        </div>
+        </div><!-- end searchform -->
+        </div><!-- end pagetop -->
     <div class="clr"></div>
     <div class="htext">
         <h2>time at work business</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac magna a turpis ornare aliquam id hendrerit nisl.</p>
         <p>Pellentesque adipiscing blandit mollis. Curabitur varius est et sem rhoncus et pretium massa molestie. Vestibulum mattis justo ultricies mauris fringilla rutrum. &nbsp; </p>
-    </div>
+    </div><!-- end htext -->
     <div class="clr"></div>
     <nav class="menu_nav">
         <ul>
@@ -37,7 +37,7 @@ Defining mt:var and enter pagetitle to judge whether current page is active or n
             <li<mt:If name="archive_index"> class="active"<mt:ElseIf name="archive_listing"> class="active"<mt:ElseIf name="entry_archive"> class="active"</mt:If>>
             <a href="<mt:Link template="<__trans phrase="Archive Index">">"><__trans phrase="blog"></a></li>
         </ul>
-    </nav>
+    </nav><!-- end menu_nav -->
     <div class="clr"></div>
-    </div>
-    </div>
+
+    </header>
