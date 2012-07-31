@@ -1,4 +1,3 @@
-=======
 # Movable Type用テーマ "CreamBurn” #
 
 ## これは何? ##
