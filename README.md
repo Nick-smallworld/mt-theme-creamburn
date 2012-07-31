@@ -75,7 +75,7 @@ On side navitation of webpage, all published pages will appear. Give “@NOT_DIS
 
 ### Banner footer ###
 
-On Banner Footer template, there are three widget in default status. Though they don't appear on the page because of <mt:Ignore> tags.
+On Banner Footer template, there are three widgets in default status. Though they don't appear on the page because of <mt:Ignore> tags.
 
 If you want to use footer columns, please remove <mt:Ignore> tags and display them.
 
@@ -87,11 +87,6 @@ Widget templates has dummy data in it’s default status. Please modify them as 
 
 ### Dummy message on main image ###
 In default, dummy message will be appeared on main image. This message has written in “Banner Header” template. Please modify as you like.
-
-### If you want to use an make blog quickly ###
-
-1. Delete “Banner Footer” including line from all templates
-2. Delete all data in “Banner Footer” template
 
 ## Exemption from liability ##
 Author don’t have any responsibility for any damages, loss or expenses with usage of the templates. 

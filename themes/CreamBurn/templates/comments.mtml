@@ -8,12 +8,12 @@
     </mt:Ignore>
     <div class="article">
     <mt:Comments lastn="$comments_per_page">
+
         <mt:CommentsHeader>
-        <h3><$mt:EntryCommentCount singular="1" plural="#" none="0"$> Responses</h3>
+    <h3><$mt:EntryCommentCount singular="1" plural="#" none="0"$> Responses</h3>
         </mt:CommentsHeader>
        <$mt:Include module="<__trans phrase="Comment Detail">"$>
     </mt:Comments>
-    </div><!-- end article -->
     </div>
     <mt:Ignore>
     <!-- Display commenting form if entry/page is accepting comments -->
@@ -22,33 +22,30 @@
     <div class="comments-open" id="comments-open">
     <div class="article">
         <h3 class="comments-open-header"><__trans phrase="Leave a comment"></h3>
-        <div class="comments-open-content">
+    <div class="comments-open-content">
 
         <mt:Ignore>
         <!-- Display greeting for users if blog allows users to register locally -->
         </mt:Ignore>
             <div id="comment-greeting"></div>
             <form method="post" action="/nospam.html" name="comments_form" id="comments-form" onsubmit="return mtCommentOnSubmit(this)">
-        <div class="article">
-            <h3 class="comments-open-header"><__trans phrase="Leave a comment"></h3>
-            <div class="comments-open-content">
-                <mt:Ignore>
-                <!-- Display greeting for users if blog allows users to register locally -->
-                </mt:Ignore>
-                <div id="comment-greeting"></div>
-                <form method="post" action="/nospam.html" name="comments_form" id="comments-form" onsubmit="return mtCommentOnSubmit(this)">
 
-                    <script type="text/javascript">
-                    <!--
-                    document.comments_form.action = '<$MTCGIPath$>'+'<$MTCommentScript$>';
-                    document.comments_form.email.value = getCookie("mtcmtmail");
-                    document.comments_form.author.value = getCookie("mtcmtauth");
-                    document.comments_form.url.value = getCookie("mtcmthome");
+                <script type="text/javascript">
+                <!--
+                document.comments_form.action = '<$MTCGIPath$>'+'<$MTCommentScript$>';
+                document.comments_form.email.value = getCookie("mtcmtmail");
+                document.comments_form.author.value = getCookie("mtcmtauth");
+                document.comments_form.url.value = getCookie("mtcmthome");
 
-                    if (getCookie("mtcmtauth")) {
-                    document.comments_form.bakecookie[0].checked = true;
-                    } else {
-                    document.comments_form.bakecookie[1].checked = true;
+                if (getCookie("mtcmtauth")) {
+                document.comments_form.bakecookie[0].checked = true;
+                } else {
+                document.comments_form.bakecookie[1].checked = true;
+
+                }
+                //-->
+                </script>
+
                 <input type="hidden" name="static" value="1" />
                 <input type="hidden" name="entry_id" value="<$mt:EntryID$>" />
                 <input type="hidden" name="__lang" value="<$mt:BlogLanguage$>" />
@@ -56,7 +53,7 @@
                 <input type="hidden" name="armor" value="1" />
                 <input type="hidden" name="preview" value="" />
                 <input type="hidden" name="sid" value="" />
-                <div id="comments-open-data">
+                 <div id="comments-open-data">
                 <ol>
                     <li>
 
@@ -76,11 +73,11 @@
                         <input type="checkbox" id="comment-bake-cookie" name="bakecookie" onclick="mtRememberMeOnClick(this)" value="1" accesskey="r" />
                    </li>
                  </ol>
-            </div><!-- end comments-open-data -->
-            <div id="comment-form-reply" style="display:none">
+            </div>
+              <div id="comment-form-reply" style="display:none">
                     <input type="checkbox" id="comment-reply" name="comment_reply" value="" onclick="mtSetCommentParentID()" />
                     <label for="comment-reply" id="comment-reply-label"></label>
-            </div><!-- end comment-form-reply -->
+                </div>
                   <ol>
                     <li>
                     <label for="comment-text"><__trans phrase="Comments">
@@ -95,10 +92,10 @@
                 <div id="comments-open-captcha"></div>
 
             </form>
-        </div><!-- end comments-open-content -->
-    </div><!-- end article -->
-    </div><!-- end comment-open -->
-     <script type="text/javascript">
+        </div>
+        </div>
+    </div>
+    <script type="text/javascript">
     <!--
     mtAttachEvent("load", mtEntryOnLoad);
     mtAttachEvent("unload", mtEntryOnUnload);
