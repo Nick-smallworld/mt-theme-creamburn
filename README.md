@@ -3,13 +3,13 @@
 ## What’s this? ##
 “CreamBurn” is a theme for Movable Type 5. This theme is distributed under the Creative Commons license. You can use this theme both for personal and business under the CC license.
 
-This theme is appropriate for SMB’s website and personal blog, as a base of customization. In default this theme is half-made status, and includes some dummy texts and images. Pleaese customize them when you use.
+This theme is appropriate for SMB’s website and personal blog, as a base of customization. In default this theme includes some dummy texts and images. Pleaese customize them when you use.
 
 ## Name ##
 CreamBurn
 
 ## Corresponding CMS ##
-Movable Type 5.x upper　
+Movable Type 5.x upper
 (for Blog)
 
 ## Corresponding browser ##
@@ -78,9 +78,7 @@ On side navitation of webpage, all published pages will appear. Give “@NOT_DIS
 On Banner Footer template, there are three widgets in default status. Though they don't appear on the page because of <mt:Ignore> tags.
 
 If you want to use footer columns, please remove <mt:Ignore> tags and display them.
-
 In “Recent Items” widget, dummy thumbnails will be appeared if there are no image files in MT.
-
 If some image files have been uploaded as MT’s asset files, then thumbnails with square shape will be appeared.
 
 Widget templates has dummy data in it’s default status. Please modify them as you like.
