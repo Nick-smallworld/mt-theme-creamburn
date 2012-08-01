@@ -56,7 +56,6 @@ After installation, blog has below data:
 * Dummy webpages
 * Dummy toppage
 * Dummy folder
-* Dummy footer
 
 ### Toppage ###
 On topage, MT’s page which has “＠TOPPAGE” tag will be displayed.  When there is no page with “＠TOPPAGE” tag, then three latest blog entries will be appeard.
